@@ -1,0 +1,117 @@
+/* General Navbar Styles */
+.navbar {
+    padding: 10px 15px;
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    /* font-size: 1.5rem; */
+    font-weight: bold;
+    color: #198754;
+}
+
+.navbar-nav {
+    gap:10px;
+    font-weight: 500;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    color: #198754;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #157347;
+}
+
+/* Dropdown Button */
+.btn-secondary {
+    background-color: #198754;
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #157347;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    min-width: 220px;
+    padding: 8px 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: block;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+}
+
+/* Ensure dropdown items are clickable */
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 500;
+  
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dropdown Hover Effect */
+.dropdown-item:hover{
+    background-color: yellowgreen !important;
+    color: rgba(27, 32, 27, 0.788) !important;
+    font-weight: bold !important;
+}
+
+/* Enable Hover Effect for Dropdown (Desktop) */
+@media (min-width: 992px) {
+    .navbar .dropdown:hover .dropdown-menu {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+}
+
+/* Mobile View - Allow Click Instead of Hover */
+@media (max-width: 991px) {
+    .dropdown-menu {
+        display: block;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        pointer-events: none;
+    }
+
+    .dropdown-menu.show {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .dropdown-toggle::after {
+        display: none;
+    }
+
+    .dropdown {
+        width: 100%;
+    }
+
+    .dropdown button {
+        width: 100%;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}

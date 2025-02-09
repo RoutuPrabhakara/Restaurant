@@ -1,0 +1,110 @@
+/* Banner Styling */
+.banner {
+    background-color: black;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Image Styling */
+.carousel-item img {
+    width: 100%; /* Ensures full width */
+    height: 450px; /* Fixed height */
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/* Carousel Caption */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Centered Carousel Controls with Red Background */
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: red; /* Set background to red */
+    width: 40px; /* Button width */
+    height: 40px; /* Button height */
+    border-radius: 50%; /* Make buttons circular */
+    opacity: 1; /* Ensure visibility */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%; /* Align vertically center */
+    transform: translateY(-50%); /* Adjust for centering */
+    z-index: 100; /* Ensure they appear above images */
+}
+
+/* Correct positioning */
+.carousel-control-prev {
+    left: 20px; /* Push left arrow to the left */
+    position: relative;
+    top: 50px;
+    
+    
+}
+
+.carousel-control-next {
+    right: 20px; /* Push right arrow to the right */
+}
+
+/* Ensure the arrow icons are visible */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none !important; /* Remove default Bootstrap arrow */
+    width: 40px;
+    height: 25px;
+    display: inline-block;
+}
+
+/* Add custom arrows using :before */
+.carousel-control-prev::before,
+.carousel-control-next::before {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+/* .carousel-control-prev{
+    position: relative !important;
+  top: 50px;
+  bottom: 20%;
+}
+.carousel-control-next{
+    position: relative !important;
+} */
+.carousel-control-prev::before {
+    content: '‹'; /* Left arrow */
+}
+
+.carousel-control-next::before {
+    content: '›'; /* Right arrow */
+}
+
+/* Hover Effect */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: darkred; /* Darker red on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .carousel-item img {
+        max-height: 250px;
+    }
+
+    .carousel-caption {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    /* Adjust control size for smaller screens */
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 30px;
+        height: 30px;
+    }
+}
