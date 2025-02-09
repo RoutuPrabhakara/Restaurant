@@ -7,7 +7,7 @@ function Header() {
       <div className="container-fluid">
         
         {/* Navbar Brand */}
-        <a className="navbar-brand text-success fw-bold" href="#">
+        <a className="navbar-brand text-success fw-bold" href="/">
           Navbar
         </a>
 
