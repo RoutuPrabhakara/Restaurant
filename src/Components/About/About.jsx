@@ -6,11 +6,11 @@ function About() {
     <div className="container-fluid about-container">
       <div className="row align-items-center bg-light p-5">
         {/* Left Side - Image */}
-        <div className="col-md-6 text-center">
+        <div className="col-md-6 text-center images rounded">
           <img
             src="https://demo.7iquid.com/basilico/sushi/wp-content/uploads/2024/10/img2-home1.jpg"
             alt="Restaurant"
-            className="img-fluid about-image"
+            className="img-fluid about-image rounded"
           />
         </div>
 

@@ -6,15 +6,32 @@
 
 .navbar-brand {
     /* font-size: 1.5rem; */
-    font-weight: bold;
+    /* font-weight: bold; */
     color: #198754;
+}
+button{
+    font-weight: bold !important;
+    color: #198754 !important;
+    font-size: 40px;
+    margin-top: 10px;
+
 }
 
 .navbar-nav {
-    gap:10px;
-    font-weight: 500;
+    gap:5px;
+    font-weight: 300;
 }
-
+.navbar-nav a:hover{
+    cursor: pointer;
+    color: rgba(47, 255, 99, 0.788) !important;
+}
+.dropdown button{
+    font-size: 18px;
+}
+.dropdown button:hover{
+    cursor: pointer;
+    color: rgba(47, 255, 99, 0.788) !important;
+}
 /* Navbar Links */
 .navbar-nav .nav-link {
     color: #198754;
@@ -27,7 +44,7 @@
 
 /* Dropdown Button */
 .btn-secondary {
-    background-color: #198754;
+    background-color: #198754a2;
     border: none;
     padding: 10px 15px;
     font-weight: bold;
@@ -37,7 +54,7 @@
 }
 
 .btn-secondary:hover {
-    background-color: #157347;
+    background-color: #157347b4;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 

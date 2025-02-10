@@ -36,7 +36,7 @@ function Header() {
             {/* Admin Dashboard Dropdown */}
             <div className="dropdown">
               <button
-                className="btn btn-success dropdown-toggle"
+                className="btn  dropdown-toggle"
                 type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -54,7 +54,7 @@ function Header() {
             {/* Kitchen Display System Dropdown */}
             <div className="dropdown">
               <button
-                className="btn btn-success dropdown-toggle"
+                className="btn  dropdown-toggle"
                 type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -70,7 +70,7 @@ function Header() {
             </div>
 
             {/* Profile Login Button */}
-            <a className="btn btn-success  text-center pb-1" style={{height:"40px",padding:"10px"}} href="#">Profile Login</a>
+            <a className="btn   text-center pb-1 " style={{height:"40px",padding:"10px",fontSize:"18px",fontWeight:'bold',color:'green',paddingBottom:"5px"}} href="#">Profile Login</a>
           </div>
         </div>
       </div>
