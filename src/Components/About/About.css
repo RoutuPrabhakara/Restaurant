@@ -1,0 +1,40 @@
+.about-container {
+    padding: 50px 20px;
+  }
+  
+  .about-image {
+    max-width: 90%;
+    max-height: 500px;
+    border-radius: 20px;
+  }
+  
+  .about-text {
+    padding: 20px;
+  }
+  
+  .about-title {
+    font-size: 2rem; /* Desktop */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .about-title {
+      font-size: 1.8rem; /* Adjust for smaller screens */
+    }
+  }
+  
+  .about-btn {
+    border: 2px solid #000;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .about-btn:hover {
+    background-color: #000;
+    color: white;
+  }
+  p{
+    flex-wrap: wrap;
+  }
+  
