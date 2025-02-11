@@ -6,6 +6,8 @@ function ProductsDetails() {
     const { id } = useParams();
     const [product, setProduct] = useState(null);
     const [quantity, setQuantity] = useState(1);
+
+    const [cartData,SetCartData]=useState([])
   
     const incrementQuantity = () => setQuantity(quantity + 1);
     const decrementQuantity = () => {
@@ -14,7 +16,12 @@ function ProductsDetails() {
   
     useEffect(() => {
       setProduct(menu.flatMap(category => category.items).find((item) => item.id === Number(id)));
+      SetCartData(JSON.parse(localStorage.getItem('cartData')) || [])
     }, [id]);
+
+    const cartHandler =()=>{
+      localStorage.setItem('cartData',JSON.stringify([...cartData,product]))
+    }
   
     if (!product) return <div className="text-center mt-5"><h2></h2></div>;
   
@@ -61,7 +68,7 @@ function ProductsDetails() {
   
             {/* Buttons */}
             <div className="d-flex gap-2 mt-3 cardsdata">
-              <button className="btn btn-success  text-white w-100 p-3 rounded-1">
+              <button className="btn btn-success  text-white w-100 p-3 rounded-1" onClick={ cartHandler}>
                 <i className="bi bi-bag"></i> Add to Cart
               </button>
               <button className="btn btn-danger w-100 p-3 rounded-1">
