@@ -11,7 +11,7 @@ function Creativemenu() {
                         <img src="https://img.freepik.com/premium-vector/chopsticks-line-icon-isolated-white-background_268104-8521.jpg?w=740" alt="logo" className='text-white bg-dark' />
                         <div className="right">
                             <h3 className='text-white text-uppercase pt-4'>Authentic Taste</h3>
-                            <p className='text-white fs-5'>Our dishes adhere to the Japanese virtue of serving natural and healthy meals. Fresh and high-quality ingredients.</p>
+                            <p className='text-white '>Our dishes adhere to the Japanese virtue of serving natural and healthy meals. Fresh and high-quality ingredients.</p>
                         </div>
                     </div>
 
@@ -32,7 +32,7 @@ function Creativemenu() {
                     </div>
                 </div>
 
-                <div className="col-md-6 col-sm-6 rights">
+                <div className="col-md-6  col-sm-6 rights">
                   <div className="w-100 h-100">
                   <img src="https://img.freepik.com/free-photo/glass-creamy-dessert-with-cookie-pieces_140725-8533.jpg?t=st=1739168505~exp=1739172105~hmac=0314431da6e3f8d131e62e2aab96d9a2445e2ad811c55c4ace34abb44df6f4c5&w=360" 
                    alt="Dessert"  

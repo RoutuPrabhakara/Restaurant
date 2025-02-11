@@ -1,9 +1,10 @@
 import React from 'react'
+import RestaurantFoodMenuCard from '../ReataurantMenucard/RestaurantFoodMenuCard'
 
 function Menu() {
   return (
     <div>
-      <h2 className='text-primary'>Menu</h2>
+     <RestaurantFoodMenuCard/>
     </div>
   )
 }

@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+    .cardsdata {
+        flex-direction: column;
+    }
+
+    .cardsdata button {
+        width: 100%;
+    }
+}

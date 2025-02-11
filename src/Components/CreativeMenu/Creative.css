@@ -17,6 +17,12 @@
     border-radius: 20px;
 }
 
+@media (max-width:567px) {
+    .rights img{
+        display: none;
+    }
+}
+
 .rights {
     background-image: url('https://img.freepik.com/free-photo/front-view-fried-mushrooms-with-seasonings-dark-grey-table-meal-food-dinner_140725-79044.jpg?t=st=1739168865~exp=1739172465~hmac=668d071cd42336498c5457946ae326a591d9bce23e543d09f0e236d5e4f44dd2&w=740');
     background-repeat: no-repeat;
