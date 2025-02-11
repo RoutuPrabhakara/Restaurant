@@ -10,9 +10,9 @@ function RestaurantFoodMenuCard() {
 
     return (
         <div className="container">
-            <h2 className="text-center text-primary my-4">🍽️ Our Delicious Menu 🍽️</h2>
+            <h2 className="text-center text-primary my-4 text-uppercase">🍽️ Our Delicious Menu 🍽️</h2>
             <hr />
-            <div className="row g-3"> {/* Added Bootstrap spacing */}
+            <div className="row g-3">
                 {Food.map((item, index) => (
                     <div key={index} className=" col-sm-6 col-md-4 gap-20">
                         <div className="card h-100  w-100 p-3 text-center shadow-sm rounded border-2">
@@ -25,7 +25,7 @@ function RestaurantFoodMenuCard() {
                             />
                             <p className="mt-2 text-dark">{item.description}</p>
                             <p className="text-success fw-bold"> Price:${item.price.toFixed(2)}</p>
-                            <a href="#" className='btn btn-primary'>Click more</a>
+                            <a href={`/FoodMenuCard/${item.id}`} className='btn btn-primary text-uppercase'>order now</a>
                         </div>
                     </div>
                 ))}

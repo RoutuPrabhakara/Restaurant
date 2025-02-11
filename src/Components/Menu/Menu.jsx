@@ -1,8 +1,10 @@
 import React from 'react'
-import './Menu.css'
+
 function Menu() {
   return (
-    <div>Menu</div>
+    <div>
+      <h2 className='text-primary'>Menu</h2>
+    </div>
   )
 }
 

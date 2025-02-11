@@ -7,6 +7,8 @@ import Reservation from './Components/Reservation/Reservation'
 import Feedback from './Components/FeedBack/Feedback'
 import Cart from './Components/Cart/Cart'
 import Nodatafound from './Components/NoDataGFound/Nodatafound'
+import RestaurantFoodMenuCard from './Components/ReataurantMenucard/RestaurantFoodMenuCard'
+import ProductsDetails from './Components/ProdcutsDetails/ProductsDetails'
 
 
 function App() {
@@ -22,6 +24,7 @@ function App() {
         <Route path='/Cart' element={<Cart/>}/>
         <Route path='/Feedback' element={<Feedback/>}/>
         <Route path='/*' element={<Nodatafound/>}/>
+        <Route path='/FoodMenuCard/:id' element={<ProductsDetails/>}/>
 
 
 

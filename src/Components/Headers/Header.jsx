@@ -28,7 +28,7 @@ function Header() {
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav ms-auto fw-bold fs-5">
             <a className="nav-link" href="/">Home</a>
-            <a className="nav-link" href="/Menu">Menu</a>
+            <a className="nav-link" href='/Menu'>Menu</a>
             <a className="nav-link" href="/Reservation">Reservation</a>
             <a className="nav-link" href="/Cart">Cart</a>
             <a className="nav-link" href="/Feedback">Feedback Reviews</a>
