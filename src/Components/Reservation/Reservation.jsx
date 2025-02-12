@@ -13,6 +13,7 @@ function Reservation() {
   const handleChange=(e)=>{
     SetFormData({...formData,[e.target.name]:e.target.value})
   };
+ 
   const handleSubmit = async(e)=>{
     e.preventDefault()
     try {
@@ -23,55 +24,67 @@ function Reservation() {
     }
   }
   return (
-    <div>
-      <div className="container-fluid">
-        <div className="col-md-6 m-auto border-3 mt-4 mb-4 ">
-          <div className="fs-3 text-success text-center fw-blod mt-4 text-capitalize">Reservation Table</div>
-          <form onSubmit={handleSubmit} className='was-validated'>
-                 <div className="">
-                 <label htmlFor="Name">Name</label>
-                  <input type="text" className='form-control' id='Name' name='name'  value={formData.name} placeholder='Enter Name' onChange={handleChange} required/>
-                  <div className="valid-feedback">Valid</div>
-                  <div className="invalid-feedback">Please fill out this feild</div>
-                 </div>
+    
+   <div className='container-fluid p-3'>
+   
+  <div className="ri">
+    <div className="col-md-6 m-auto">
+    <div className="card p-3 ">
+    <div className=" conatiner-fluid">
+    <h3 className='text-center text-dark text-uppercase p-1'>Reservation Table</h3>
+      <form action="" onSubmit={handleSubmit} className='was-validated'>
+       <div className="">
+       <label htmlFor="Name">Name</label>
+       <input type="text" id='Name' name='name'  className='form-control' value={formData.name} required onChange={handleChange}/>
+       <div className='valid-feedback fw-bold'>Valid.</div>
+       <div className='invalid-feedback fw-bold'>Please fill out this field.</div>
+       </div>
 
-                 <div className="">
-                 <label htmlFor="email">Email</label>
-                  <input type="email" className='form-control' id='email' name='email'  value={formData.email} placeholder='Enter email' onChange={handleChange} required/>
-                  <div className="valid-feedback">Valid</div>
-                  <div className="invalid-feedback">Please fill out this feild</div>
-                 </div>
-                 <div className="">
-                 <label htmlFor="phone">Phone number</label>
-                  <input type="tel" className='form-control' id='phone' name='phone' value={formData.phone} placeholder='Enter phone number' onChange={handleChange} required/>
-                  <div className="valid-feedback">Valid</div>
-                  <div className="invalid-feedback">Please fill out this feild</div>
-                 </div>
-                 <div className="">
-                 <label htmlFor="date">Date</label>
-                  <input type="date" className='form-control' id='date' name='date' value={formData.date} placeholder='Enter date' onChange={handleChange} required/>
-                  <div className="valid-feedback">Valid</div>
-                  <div className="invalid-feedback">Please fill out this feild</div>
-                 </div>
-                 <div className="">
-                 <label htmlFor="time">Time</label>
-                  <input type="time" className='form-control' id='time' name='time' value={formData.time} placeholder='Enter time' onChange={handleChange} required/>
-                  <div className="valid-feedback">Valid</div>
-                  <div className="invalid-feedback">Please fill out this feild</div>
-                 </div>
-                 <div className="">
-                 <label htmlFor="guests">Guests</label>
-                  <input type="number" className='form-control' id='guests' min={1}  max={10} name='guests'  value={formData.guests}placeholder='Enter guests numbers' onChange={handleChange} required/>
-                  <div className="valid-feedback">Valid</div>
-                  <div className="invalid-feedback">Please fill out this feild</div>
-                  <button className='btn btn-success text-white text-center' type='submit'>Reserve Table</button>
-                 </div>
-          </form>
-        </div>
+       <div className="">
+       <label htmlFor="email">Email</label>
+       <input type="text" id='email' name='email'  className='form-control' value={formData.email}  required onChange={handleChange} />
+       <div class="valid-feedback fw-bold">Valid.</div>
+       <div class="invalid-feedback fw-bold">Please fill out this field.</div>
+       </div>
 
-        
-      </div>
+       <div className="">
+       <label htmlFor="phone">Phone</label>
+       <input type="text" id='phone' name='phone'  className='form-control' value={formData.phone} required onChange={handleChange}/>
+       <div class="valid-feedback fw-bold">Valid.</div>
+       <div class="invalid-feedback fw-bold">Please fill out this field.</div>
+       </div>
+
+       <div className="">
+       <label htmlFor="date">Date</label>
+       <input type="date" id='date' name='date'  className='form-control' value={formData.date} required onChange={handleChange}/>
+       <div class="valid-feedback fw-bold">Valid.</div>
+       <div class="invalid-feedback fw-bold">Please fill out this field.</div>
+       </div>
+
+       <div className="">
+       <label htmlFor="time">Time</label>
+       <input type="time" id='time' name='time'  className='form-control' value={formData.time} required onChange={handleChange}/>
+       <div class="valid-feedback fw-bold">Valid.</div>
+       <div class="invalid-feedback fw-bold">Please fill out this field.</div>
+       </div>
+       <div className="">
+       <label htmlFor="guests">Guests</label>
+       <input type="number" id='guests' name='guests'  className='form-control' value={formData.guests} required onChange={handleChange}/>
+       <div class="valid-feedback fw-bold">Valid.</div>
+       <div class="invalid-feedback fw-bold">Please fill out this field.</div>
+       <button className='btn btn-success text-center'>Reserve Table</button>
+       </div>
+      
+      
+      
+      
+      
+      </form>
     </div>
+    </div>
+    </div>
+  </div>
+   </div>
   )
 }
 

@@ -3,11 +3,12 @@ import "./Header.css";
 
 function Header() {
   return (
-    <nav className="navbar navbar-expand-lg bg-light border-2 p-2">
+    <div className="navdata">
+      <nav className="navbar navbar-expand-lg bg-light border-2 p-2">
       <div className="container-fluid">
         
         {/* Navbar Brand */}
-        <a className="navbar-brand text-success fw-bold" href="/">
+        <a className="navbar-brand text-dark " href="/">
           Navbar
         </a>
 
@@ -26,7 +27,7 @@ function Header() {
 
         {/* Navigation Links */}
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div className="navbar-nav ms-auto fw-bold fs-5">
+          <div className="navbar-nav ms-auto  text-success">
             <a className="nav-link" href="/">Home</a>
             <a className="nav-link" href='/Menu'>Menu</a>
             <a className="nav-link" href="/Reservation">Reservation</a>
@@ -34,7 +35,7 @@ function Header() {
             <a className="nav-link" href="/Feedback">Feedback Reviews</a>
 
             {/* Admin Dashboard Dropdown */}
-            <div className="dropdown">
+            <div className="dropdown text-success">
               <button
                 className="btn  dropdown-toggle"
                 type="button"
@@ -43,7 +44,7 @@ function Header() {
               >
                 Admin Dashboard
               </button>
-              <ul className="dropdown-menu">
+              <ul className="dropdown-menu text-success">
                 <li><a className="dropdown-item" href="#">Dashboard</a></li>
                 <li><a className="dropdown-item" href="#">Menu Management</a></li>
                 <li><a className="dropdown-item" href="#">Orders</a></li>
@@ -52,7 +53,7 @@ function Header() {
             </div>
 
             {/* Kitchen Display System Dropdown */}
-            <div className="dropdown">
+            <div className="dropdown text-success">
               <button
                 className="btn  dropdown-toggle"
                 type="button"
@@ -70,11 +71,12 @@ function Header() {
             </div>
 
             {/* Profile Login Button */}
-            <a className="btn   text-center pb-1 " style={{height:"40px",padding:"10px",fontSize:"18px",fontWeight:'bold',color:'green',paddingBottom:"5px"}} href="#">Profile Login</a>
+            <a className="btn   text-center pb-1 " style={{height:"40px",padding:"5px",color:'black',paddingBottom:"5px"}} href="#">Profile Login</a>
           </div>
         </div>
       </div>
     </nav>
+    </div>
   );
 }
 
