@@ -7,10 +7,10 @@ function Cart() {
 
   useEffect(()=>{
     setAllCartData(JSON.parse(localStorage.getItem('cartData')) || [])
-  },[])
+  })
 
   const deleteCartItem =(currentIndex)=>{
-    setAllCartData(allCartData.splice(currentIndex,1))
+    setAllCartData(allCartData.splice(currentIndex, 1))
     localStorage.setItem('cartData',JSON.stringify(allCartData))
   }
   return (
@@ -20,10 +20,10 @@ function Cart() {
           {
             allCartData.length === 0?(
               <div className="card m-5">
-                <div className="col-md-5 m-auto">
+                <div className="col-md-6 m-auto">
                   <img src="https://assets-v2.lottiefiles.com/a/0e30b444-117c-11ee-9b0d-0fd3804d46cd/BkQxD7wtnZ.gif" alt="logo" className='w-100' />
                   <h3 className="fs-5 p-1 text-uppercase">No data found</h3>
-                  <a href="/" className='btn btn-success'>Shop now</a>
+                  <a href="/" className='btn btn-success w-50'>Shop now</a>
                 </div>
               </div>
             ):(
