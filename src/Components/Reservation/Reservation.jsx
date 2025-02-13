@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Reservation.css'
 import axios from 'axios';
+// import image  from '../assets/media/success.Logo.gif'
 function Reservation() {
   const [formData,SetFormData]=useState({
     name:'',
@@ -17,8 +18,9 @@ function Reservation() {
   const handleSubmit = async(e)=>{
     e.preventDefault()
     try {
-      await axios.post('',formData)
-      alert('Reservation  Successfull')
+      await axios.post('http://localhost:5000/registration',formData)
+      // alert(`<img src=${image} alt="logo">`)
+      alert("Registration successfull")
     } catch (error) {
       console.error("Error Making reservation",error)
     }
@@ -43,36 +45,36 @@ function Reservation() {
        <div className="">
        <label htmlFor="email">Email</label>
        <input type="text" id='email' name='email'  className='form-control' value={formData.email}  required onChange={handleChange} />
-       <div class="valid-feedback fw-bold">Valid.</div>
-       <div class="invalid-feedback fw-bold">Please fill out this field.</div>
+       <div className="valid-feedback fw-bold">Valid.</div>
+       <div className="invalid-feedback fw-bold">Please fill out this field.</div>
        </div>
 
        <div className="">
        <label htmlFor="phone">Phone</label>
        <input type="text" id='phone' name='phone'  className='form-control' value={formData.phone} required onChange={handleChange}/>
-       <div class="valid-feedback fw-bold">Valid.</div>
-       <div class="invalid-feedback fw-bold">Please fill out this field.</div>
+       <div className="valid-feedback fw-bold">Valid.</div>
+       <div className="invalid-feedback fw-bold">Please fill out this field.</div>
        </div>
 
        <div className="">
        <label htmlFor="date">Date</label>
        <input type="date" id='date' name='date'  className='form-control' value={formData.date} required onChange={handleChange}/>
-       <div class="valid-feedback fw-bold">Valid.</div>
-       <div class="invalid-feedback fw-bold">Please fill out this field.</div>
+       <div className="valid-feedback fw-bold">Valid.</div>
+       <div className="invalid-feedback fw-bold">Please fill out this field.</div>
        </div>
 
        <div className="">
        <label htmlFor="time">Time</label>
        <input type="time" id='time' name='time'  className='form-control' value={formData.time} required onChange={handleChange}/>
-       <div class="valid-feedback fw-bold">Valid.</div>
-       <div class="invalid-feedback fw-bold">Please fill out this field.</div>
+       <div className="valid-feedback fw-bold">Valid.</div>
+       <div className="invalid-feedback fw-bold">Please fill out this field.</div>
        </div>
        <div className="">
        <label htmlFor="guests">Guests</label>
        <input type="number" id='guests' name='guests'  className='form-control' value={formData.guests} required onChange={handleChange}/>
-       <div class="valid-feedback fw-bold">Valid.</div>
-       <div class="invalid-feedback fw-bold">Please fill out this field.</div>
-       <button className='btn btn-success text-center'>Reserve Table</button>
+       <div className="valid-feedback fw-bold">Valid.</div>
+       <div className="invalid-feedback fw-bold ">Please fill out this field.</div>
+       <button className='btn btn-success text-center w-100 text-uppercase '>Reserve Table</button>
        </div>
       
       
