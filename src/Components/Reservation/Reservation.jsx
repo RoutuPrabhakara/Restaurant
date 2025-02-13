@@ -18,7 +18,7 @@ function Reservation() {
   const handleSubmit = async(e)=>{
     e.preventDefault()
     try {
-      await axios.post('http://localhost:5000/registration',formData)
+      await axios.post('https://reservation-6iil.onrender.com/registration',formData)
       // alert(`<img src=${image} alt="logo">`)
       alert("Registration successfull")
     } catch (error) {
