@@ -19,10 +19,10 @@ function Cart() {
         <div className="row">
           {
             allCartData.length === 0?(
-              <div className="card m-5">
-                <div className="col-md-6 m-auto">
-                  <img src="https://assets-v2.lottiefiles.com/a/0e30b444-117c-11ee-9b0d-0fd3804d46cd/BkQxD7wtnZ.gif" alt="logo" className='w-100' />
-                  <h3 className="fs-5 p-1 text-uppercase">No data found</h3>
+              <div className=" m-5">
+                <div className="col-md-6 cartdata card m-auto p-3">
+                  <img src="https://assets-v2.lottiefiles.com/a/0e30b444-117c-11ee-9b0d-0fd3804d46cd/BkQxD7wtnZ.gif" alt="logo" className='w-50' />
+                  <h3 className="fs-5 p-1 text-uppercase ">No data found</h3>
                   <a href="/" className='btn btn-success w-50'>Shop now</a>
                 </div>
               </div>
@@ -33,7 +33,8 @@ function Cart() {
                 <a href="/Menu" className='btn btn-dark'>Shop More</a>
               </div>
               <hr />
-              <table>
+             <div className="col-md-6 col-lg-12 ">
+             <table>
                 <tr>
                   <th>SI No</th>
                   <th>Image</th>
@@ -61,6 +62,9 @@ function Cart() {
                 ))
               }
               </table>
+
+
+             </div>
              </div>
 
            

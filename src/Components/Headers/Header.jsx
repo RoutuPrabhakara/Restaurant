@@ -46,8 +46,8 @@ function Header() {
               </button>
               <ul className="dropdown-menu text-success">
                 <li><a className="dropdown-item" href="#">Dashboard</a></li>
-                <li><a className="dropdown-item" href="#">Menu Management</a></li>
-                <li><a className="dropdown-item" href="#">Orders</a></li>
+                <li><a className="dropdown-item" href="/Menu">Menu Management</a></li>
+                <li><a className="dropdown-item" href="/Cart">Orders</a></li>
                 <li><a className="dropdown-item" href="#">Reservations</a></li>
               </ul>
             </div>

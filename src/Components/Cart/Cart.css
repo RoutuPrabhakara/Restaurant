@@ -8,3 +8,9 @@ td, th{
 td img{
     width: 70px !important;
 }
+.cartdata{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: auto;
+}
